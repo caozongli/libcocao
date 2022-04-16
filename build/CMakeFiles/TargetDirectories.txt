@@ -1,0 +1,5 @@
+/home/libcocao/workspace/libcocao/build/CMakeFiles/rebuild_cache.dir
+/home/libcocao/workspace/libcocao/build/CMakeFiles/test_fiber.dir
+/home/libcocao/workspace/libcocao/build/CMakeFiles/libcocao.dir
+/home/libcocao/workspace/libcocao/build/CMakeFiles/edit_cache.dir
+/home/libcocao/workspace/libcocao/build/CMakeFiles/test_log.dir

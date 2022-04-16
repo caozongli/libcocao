@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/libcocao/workspace/libcocao/libcocao/fiber.cc
+schedule.h
+/home/libcocao/workspace/libcocao/libcocao/schedule.h
+atomic
+-
+
+/home/libcocao/workspace/libcocao/libcocao/log.cc
+log.h
+/home/libcocao/workspace/libcocao/libcocao/log.h
+
+/home/libcocao/workspace/libcocao/libcocao/log.h
+
+/home/libcocao/workspace/libcocao/libcocao/schedule.cc
+schedule.h
+/home/libcocao/workspace/libcocao/libcocao/schedule.h
+
+/home/libcocao/workspace/libcocao/libcocao/schedule.h
+
+/home/libcocao/workspace/libcocao/libcocao/thread.cc
+thread.h
+/home/libcocao/workspace/libcocao/libcocao/thread.h
+
+/home/libcocao/workspace/libcocao/libcocao/thread.h
+
+/home/libcocao/workspace/libcocao/libcocao/utils.cc
+utils.h
+/home/libcocao/workspace/libcocao/libcocao/utils.h
+
+/home/libcocao/workspace/libcocao/libcocao/utils.h
+

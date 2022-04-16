@@ -1,0 +1,1 @@
+#include "../libcocao/log.h"static libcocao::Logger::ptr g_logger = LIBCOCAO_LOG_ROOT();int main() {    std::cout << "test_log begin ..." << std::endl;    LIBCOCAO_LOG_INFO(g_logger) << "nihao";    std::cout << "test_log ending ..." << std::endl;    return 0;}

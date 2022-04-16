@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="libcocao"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/libcocao/workspace/libcocao/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/libcocao/workspace/libcocao/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_fiber">
+				<Option output="/home/libcocao/workspace/libcocao/bin/test_fiber" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/libcocao/workspace/libcocao/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/libcocao/workspace/libcocao/."/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_fiber"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_fiber/fast">
+				<Option output="/home/libcocao/workspace/libcocao/bin/test_fiber" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/libcocao/workspace/libcocao/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/libcocao/workspace/libcocao/."/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_fiber/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libcocao">
+				<Option output="/home/libcocao/workspace/libcocao/bin/liblibcocao.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/libcocao/workspace/libcocao/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/libcocao/workspace/libcocao/."/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 libcocao"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libcocao/fast">
+				<Option output="/home/libcocao/workspace/libcocao/bin/liblibcocao.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/libcocao/workspace/libcocao/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/libcocao/workspace/libcocao/."/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 libcocao/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/libcocao/workspace/libcocao/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_log">
+				<Option output="/home/libcocao/workspace/libcocao/bin/test_log" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/libcocao/workspace/libcocao/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/libcocao/workspace/libcocao/."/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_log"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_log/fast">
+				<Option output="/home/libcocao/workspace/libcocao/bin/test_log" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/libcocao/workspace/libcocao/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/libcocao/workspace/libcocao/."/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_log/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/fd_manager.cc">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/fd_manager.h">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/fiber.cc">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/fiber.h">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/iomanager.cc">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/iomanager.h">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/log.cc">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/log.h">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/noncopyable.h">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/schedule.cc">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/schedule.h">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/singleton.h">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/thread.cc">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/thread.h">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/utils.cc">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/utils.h">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/tests/test_fiber.cc">
+			<Option target="test_fiber"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/tests/test_log.cc">
+			<Option target="test_log"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/cmake/utils.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+.././libcocao/libcocao.h
+log.h
+.././libcocao/log.h
+
+.././libcocao/log.h
+
+/home/libcocao/workspace/libcocao/tests/test_fiber.cc
+libcocao/libcocao.h
+/home/libcocao/workspace/libcocao/tests/libcocao/libcocao.h
+

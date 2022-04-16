@@ -1,0 +1,1 @@
+/usr/bin/c++   -rdynamic -O3 -fPIC -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -g  -rdynamic CMakeFiles/test_fiber.dir/tests/test_fiber.cc.o  -o ../bin/test_fiber  -L/usr/local/lib -Wl,-rpath,/usr/local/lib:/home/libcocao/workspace/libcocao/bin ../bin/liblibcocao.so -ldl -lpthread 
