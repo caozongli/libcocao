@@ -224,6 +224,12 @@
 		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/thread.h">
 			<Option target="libcocao"/>
 		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/timer.cc">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/timer.h">
+			<Option target="libcocao"/>
+		</Unit>
 		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/utils.cc">
 			<Option target="libcocao"/>
 		</Unit>

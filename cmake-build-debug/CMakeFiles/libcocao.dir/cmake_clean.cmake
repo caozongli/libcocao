@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/libcocao.dir/libcocao/iomanager.cc.o"
   "CMakeFiles/libcocao.dir/libcocao/schedule.cc.o"
   "CMakeFiles/libcocao.dir/libcocao/thread.cc.o"
+  "CMakeFiles/libcocao.dir/libcocao/timer.cc.o"
   "CMakeFiles/libcocao.dir/libcocao/utils.cc.o"
   "../bin/liblibcocao.pdb"
   "../bin/liblibcocao.so"

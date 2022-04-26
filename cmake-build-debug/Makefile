@@ -314,6 +314,33 @@ libcocao/thread.cc.s:
 	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/thread.cc.s
 .PHONY : libcocao/thread.cc.s
 
+libcocao/timer.o: libcocao/timer.cc.o
+
+.PHONY : libcocao/timer.o
+
+# target to build an object file
+libcocao/timer.cc.o:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/timer.cc.o
+.PHONY : libcocao/timer.cc.o
+
+libcocao/timer.i: libcocao/timer.cc.i
+
+.PHONY : libcocao/timer.i
+
+# target to preprocess a source file
+libcocao/timer.cc.i:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/timer.cc.i
+.PHONY : libcocao/timer.cc.i
+
+libcocao/timer.s: libcocao/timer.cc.s
+
+.PHONY : libcocao/timer.s
+
+# target to generate assembly for a file
+libcocao/timer.cc.s:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/timer.cc.s
+.PHONY : libcocao/timer.cc.s
+
 libcocao/utils.o: libcocao/utils.cc.o
 
 .PHONY : libcocao/utils.o
@@ -424,6 +451,9 @@ help:
 	@echo "... libcocao/thread.o"
 	@echo "... libcocao/thread.i"
 	@echo "... libcocao/thread.s"
+	@echo "... libcocao/timer.o"
+	@echo "... libcocao/timer.i"
+	@echo "... libcocao/timer.s"
 	@echo "... libcocao/utils.o"
 	@echo "... libcocao/utils.i"
 	@echo "... libcocao/utils.s"

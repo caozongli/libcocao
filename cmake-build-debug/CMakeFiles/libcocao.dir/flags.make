@@ -20,5 +20,7 @@ CXX_INCLUDES = -I/home/libcocao/workspace/libcocao/. -I/usr/local/include
 
 # Custom defines: CMakeFiles/libcocao.dir/libcocao/thread.cc.o_DEFINES = __FILE__="libcocao/thread.cc"
 
+# Custom defines: CMakeFiles/libcocao.dir/libcocao/timer.cc.o_DEFINES = __FILE__="libcocao/timer.cc"
+
 # Custom defines: CMakeFiles/libcocao.dir/libcocao/utils.cc.o_DEFINES = __FILE__="libcocao/utils.cc"
 

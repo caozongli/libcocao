@@ -21,6 +21,7 @@ set (LIB_SRC
         libcocao/schedule.cc
         libcocao/singleton.h
         libcocao/thread.cc
+        libcocao/timer.cc
         libcocao/utils.cc
         )
 
