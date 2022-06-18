@@ -1,4 +1,6 @@
 #include "schedule.h"
+#include "fiber.h"
+
 #include <atomic>
 
 namespace libcocao {
@@ -87,7 +89,7 @@ void Fiber::yield() {
         m_state = READY;
     }
     if (m_run_in_scheduler) {
-        swapcontext(&(Scheduler::GetMainFiber()->m_ctx), &m_ctx);
+        swapcontext(&m_ctx, &(Scheduler::GetMainFiber()->m_ctx));
     } else {
         swapcontext(&m_ctx, &(t_fiber->m_ctx));
     }
@@ -112,6 +114,11 @@ void Fiber::MainFunc() {
     auto raw_ptr = cur.get();
     cur.reset();
     raw_ptr->yield();
+}
+
+uint64_t Fiber::GetFiberId() {
+    if (t_fiber) return t_fiber->getId();
+    return 0;
 }
 
 }

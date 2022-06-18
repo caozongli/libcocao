@@ -28,10 +28,13 @@ public:
     void resume();
     State getState();
 
+    uint64_t getId() const { return m_id; }
+
 public:
     static void SetThis(Fiber* f);
     static Fiber::ptr GetThis();
     static void MainFunc();
+    static uint64_t GetFiberId();
 
 private:
     uint64_t m_id = 0;

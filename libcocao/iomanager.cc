@@ -96,17 +96,33 @@ void IOManager::idle() {
     });
 
     while (true) {
+        uint64_t next_timeout = 0;
         if (stopping()) {
             LIBCOCAO_LOG_DEBUG(g_logger) << "name=" << getName() << "idle stopping exit";
             break;
         }
-        static const int MAX_TIMEOUT = 5000;
-        int rt = epoll_wait(m_epfd, events, MAX_EVENTS, MAX_TIMEOUT);
-        if (rt < 0) {
-            if (errno == EINTR) continue;
-            LIBCOCAO_LOG_DEBUG(g_logger) << "epoll_wait" << m_epfd << ") (rt="
-                                        << rt << ") (errno=" << "errno" << ")(errstr:" << strerror(errno);
-            break;
+
+        //阻塞在epoll_wait上，等待事件的发生或定时器超时
+        int rt = 0;
+        do {
+            static const int MAX_TIMEOUT = 5000;
+            if (next_timeout != ~0ull) {
+                next_timeout = std::min((int)next_timeout, MAX_TIMEOUT);
+            } else {
+                next_timeout = MAX_TIMEOUT;
+            }
+            rt = epoll_wait(m_epfd, events, MAX_EVENTS, (int)next_timeout);
+            if(rt < 0 && errno == EINTR) continue;
+            else break;
+        } while(true);
+
+        //收集所有已超时的定时器，执行回调函数
+        std::vector<std::function<void()>> cbs;
+        listExpiredCb(cbs);
+
+        if (!cbs.empty()) {
+            schedule(cbs.begin(), cbs.end());
+            cbs.clear();
         }
 
         for (int i = 0; i < rt; ++ i) {

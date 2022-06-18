@@ -18,9 +18,12 @@ public:
 
     Scheduler (size_t threads, bool use_caller, const std::string &name);
     void start();
-    bool stopping();
-    void tickle();
-    void idle();
+
+    virtual bool stopping();
+
+    virtual void tickle();
+
+    virtual void idle();
     void run();
     void stop();
     void SetThis();

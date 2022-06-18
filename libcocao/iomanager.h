@@ -5,10 +5,11 @@
 #include <sys/epoll.h>
 #include <cstring>
 #include <fcntl.h>
+#include "timer.h"
 
 namespace libcocao{
 
-class IOManager: Scheduler {
+class IOManager: Scheduler, TimerManager {
 public:
     typedef std::shared_ptr<IOManager> ptr;
     typedef Mutex MetexType;
@@ -41,7 +42,7 @@ public:
 
 public:
     IOManager(size_t threads=-1, bool use_caller=true, const std::string &name="");
-    ~IOManager();
+    ~IOManager() override;
     void contextResize(size_t size);
     void tickle() override;
     void idle() override;
@@ -49,7 +50,7 @@ public:
     bool delEvent(int fd, Event event);
     bool cancelEvent(int fd, Event event);
     bool cancelAll(int fd);
-    bool stopping();
+    bool stopping() override;
 
 private:
     int m_epfd = 0;

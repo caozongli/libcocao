@@ -8,6 +8,11 @@
 
 namespace libcocao {
 pid_t GetThreadId();
+uint32_t GetFiberId();
+
+//时间ms
+uint64_t GetCurrentMS();
+uint64_t GetCurrentUS();
 
 
 }
