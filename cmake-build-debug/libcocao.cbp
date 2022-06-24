@@ -27,6 +27,54 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="test_hook">
+				<Option output="/home/libcocao/workspace/libcocao/bin/test_hook" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/libcocao/workspace/libcocao/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/libcocao/workspace/libcocao/."/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_hook"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_hook/fast">
+				<Option output="/home/libcocao/workspace/libcocao/bin/test_hook" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/libcocao/workspace/libcocao/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/libcocao/workspace/libcocao/."/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_hook/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/libcocao/workspace/libcocao/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="test_fiber">
 				<Option output="/home/libcocao/workspace/libcocao/bin/test_fiber" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/libcocao/workspace/libcocao/bin"/>
@@ -194,6 +242,12 @@
 		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/fiber.h">
 			<Option target="libcocao"/>
 		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/hook.cc">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/hook.h">
+			<Option target="libcocao"/>
+		</Unit>
 		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/iomanager.cc">
 			<Option target="libcocao"/>
 		</Unit>
@@ -206,16 +260,10 @@
 		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/log.h">
 			<Option target="libcocao"/>
 		</Unit>
-		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/noncopyable.h">
-			<Option target="libcocao"/>
-		</Unit>
 		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/schedule.cc">
 			<Option target="libcocao"/>
 		</Unit>
 		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/schedule.h">
-			<Option target="libcocao"/>
-		</Unit>
-		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/singleton.h">
 			<Option target="libcocao"/>
 		</Unit>
 		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/thread.cc">
@@ -238,6 +286,9 @@
 		</Unit>
 		<Unit filename="/home/libcocao/workspace/libcocao/tests/test_fiber.cc">
 			<Option target="test_fiber"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/tests/test_hook.cc">
+			<Option target="test_hook"/>
 		</Unit>
 		<Unit filename="/home/libcocao/workspace/libcocao/tests/test_log.cc">
 			<Option target="test_log"/>

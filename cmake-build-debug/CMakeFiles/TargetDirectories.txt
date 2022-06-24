@@ -1,4 +1,5 @@
 /home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/test_hook.dir
 /home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/test_fiber.dir
 /home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/libcocao.dir
 /home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/edit_cache.dir

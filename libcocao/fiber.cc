@@ -1,7 +1,6 @@
-#include "schedule.h"
 #include "fiber.h"
+#include "schedule.h"
 
-#include <atomic>
 
 namespace libcocao {
 

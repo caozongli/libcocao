@@ -2,9 +2,13 @@
 #define __LIBCOCAO_UTILS_H_
 
 #include <pthread.h>
-#include <sys/syscall.h>
 #include <sys/types.h>
+#include <sys/syscall.h>
+#include <stdio.h>
 #include <unistd.h>
+#include <stdint.h>
+#include <vector>
+#include <string>
 
 namespace libcocao {
 pid_t GetThreadId();

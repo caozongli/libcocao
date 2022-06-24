@@ -7,7 +7,6 @@
 #include <vector>
 #include "fiber.h"
 #include "thread.h"
-#include "log.h"
 
 namespace libcocao {
 
@@ -61,39 +60,43 @@ public:
     static Fiber* GetMainFiber();
 
 private:
-    struct SchedulerTask {
+    struct ScheduleTask {
         Fiber::ptr fiber;
         std::function<void()> cb;
         int thread;
 
-        SchedulerTask(Fiber::ptr *f, int thr) {
-            fiber = *f;
-            thread = thr;
-        };
-        SchedulerTask(Fiber::ptr f, int thr) {
-            fiber.swap(f);
+        ScheduleTask(Fiber::ptr f, int thr) {
+            fiber  = f;
             thread = thr;
         }
-        SchedulerTask(std::function<void()> *f, int thr) {
-            cb = f;
+        ScheduleTask(Fiber::ptr *f, int thr) {
+            fiber.swap(*f);
             thread = thr;
         }
-        SchedulerTask ()  {thread = -1;}
-        void reset () {
-            fiber = nullptr;
-            cb = nullptr;
+        ScheduleTask(std::function<void()> f, int thr) {
+            cb     = f;
+            thread = thr;
+        }
+        ScheduleTask(std::function<void()>* f, int thr) {
+            cb.swap(*f);
+            thread = thr;
+        }
+        ScheduleTask() { thread = -1; }
+
+        void reset() {
+            fiber  = nullptr;
+            cb     = nullptr;
             thread = -1;
         }
-
     };
 
 private:
     template<class FiberOrCb>
     bool scheduleNoLock (FiberOrCb fc, int thread) {
         bool need_tickle = m_tasks.empty();
-        SchedulerTask ft(fc, thread);
-        if (ft.fiber ||ft.cb) {
-            m_tasks.push_back(ft);
+        ScheduleTask task(fc, thread);
+        if (task.fiber || task.cb) {
+            m_tasks.push_back(task);
         }
         return need_tickle;
     }
@@ -102,7 +105,7 @@ private:
     std::string m_name;
     MutexType m_mutex;
     std::vector<Thread::ptr> m_threads;  //线程池
-    std::list<SchedulerTask> m_tasks; //任务队列
+    std::list<ScheduleTask> m_tasks; //任务队列
     std::vector<int> m_threadIds;   //线程id数组
     Fiber::ptr m_rootFiber;
     size_t m_threadCount = 0;       //线程总数,不包含user_caller主线程

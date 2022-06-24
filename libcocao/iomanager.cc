@@ -1,6 +1,9 @@
 #include "iomanager.h"
 #include "log.h"
-#include <assert.h>
+#include <unistd.h>    // for pipe()
+#include <sys/epoll.h> // for epoll_xxx()
+#include <fcntl.h>     // for fcntl()
+#include <cstring>
 
 namespace libcocao {
 
@@ -14,6 +17,7 @@ IOManager::FdContext::EventContext &IOManager::FdContext::getEventContext(Event 
             return write;
         default:
             LIBCOCAO_LOG_ERROR(g_logger) << "getContext false";
+            assert(false);
     }
 }
 
@@ -38,6 +42,7 @@ void IOManager::FdContext::triggerEvent(Event event) {
 
 IOManager::IOManager(size_t threads, bool use_caller, const std::string &name)
     : Scheduler(threads, use_caller, name){
+
     m_epfd = epoll_create(5000);
 
     int rt = pipe(m_tickleFds);
@@ -48,8 +53,10 @@ IOManager::IOManager(size_t threads, bool use_caller, const std::string &name)
     event.data.fd = m_tickleFds[0];
 
     rt = fcntl(m_tickleFds[0], F_SETFL, O_NONBLOCK);
+    assert(!rt);
 
     rt = epoll_ctl(m_epfd, EPOLL_CTL_ADD, m_tickleFds[0], &event);
+    assert(!rt);
     contextResize(32);
 
     start();
@@ -316,6 +323,14 @@ bool IOManager::cancelAll(int fd) {
     }
     assert(fd_ctx->events == 0);
     return true;
+}
+
+IOManager *IOManager::GetThis() {
+    return dynamic_cast<IOManager*>(Scheduler::GetThis());
+}
+
+void IOManager::onTimerInsertAtFront() {
+
 }
 
 

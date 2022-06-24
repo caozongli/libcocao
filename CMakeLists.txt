@@ -13,8 +13,10 @@ include_directories(/usr/local/include)
 link_directories(/usr/local/lib)
 
 set (LIB_SRC
+        libcocao/address.cc
         libcocao/fd_manager.cc
         libcocao/fiber.cc
+        libcocao/hook.cc
         libcocao/log.cc
         libcocao/iomanager.cc
         libcocao/noncopyable.h
@@ -44,6 +46,10 @@ add_dependencies(test_fiber libcocao)
 force_redefine_file_macro_for_sources(test_fiber)
 target_link_libraries(test_fiber ${LIBS})
 
+add_executable(test_hook tests/test_hook.cc)
+add_dependencies(test_hook libcocao)
+force_redefine_file_macro_for_sources(test_hook)
+target_link_libraries(test_hook ${LIBS})
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

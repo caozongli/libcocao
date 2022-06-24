@@ -1,9 +1,12 @@
 #include "schedule.h"
+#include "hook.h"
 
 namespace libcocao {
 
 static Logger::ptr g_logger = LIBCOCAO_LOG_NAME("system");
+//当前线程的调度器，同一个调度器下的所有线程共享同一个实例
 static thread_local Scheduler *t_scheduler = nullptr;
+//当前线程的调度协程，每个线程都独有一份
 static thread_local Fiber *t_scheduler_fiber = nullptr;
 
 Scheduler::Scheduler(size_t threads, bool use_caller, const std::string &name) {
@@ -65,6 +68,8 @@ void Scheduler::idle() {
 }
 
 void Scheduler::run() {
+
+    set_hook_enable(true);
     SetThis();
 
     if (libcocao::GetThreadId() != m_rootThread) {
@@ -74,7 +79,7 @@ void Scheduler::run() {
     Fiber::ptr idle_fiber(new Fiber(std::bind(&Scheduler::idle, this)));
     Fiber::ptr cb_fiber;
 
-    SchedulerTask task;
+    ScheduleTask task;
 
     while (true) {
         task.reset();
@@ -88,7 +93,12 @@ void Scheduler::run() {
                     tickle_me = true;
                     continue;
                 }
-                if (it->fiber) {
+//                if (it->fiber) {
+//                }
+
+                if(it->fiber && it->fiber->getState() == Fiber::RUNNING) {
+                    ++it;
+                    continue;
                 }
 
                 task = *it;

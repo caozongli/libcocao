@@ -12,6 +12,8 @@ CXX_INCLUDES = -I/home/libcocao/workspace/libcocao/. -I/usr/local/include
 
 # Custom defines: CMakeFiles/libcocao.dir/libcocao/fiber.cc.o_DEFINES = __FILE__="libcocao/fiber.cc"
 
+# Custom defines: CMakeFiles/libcocao.dir/libcocao/hook.cc.o_DEFINES = __FILE__="libcocao/hook.cc"
+
 # Custom defines: CMakeFiles/libcocao.dir/libcocao/log.cc.o_DEFINES = __FILE__="libcocao/log.cc"
 
 # Custom defines: CMakeFiles/libcocao.dir/libcocao/iomanager.cc.o_DEFINES = __FILE__="libcocao/iomanager.cc"

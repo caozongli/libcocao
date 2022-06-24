@@ -1,6 +1,7 @@
 #ifndef __LIBCOCAO_FD_MANAGER_H__
 #define __LIBCOCAO_FD_MANAGER_H__
 #include <memory>
+#include <sys/stat.h>
 #include "thread.h"
 #include "iomanager.h"
 #include "singleton.h"
@@ -46,6 +47,21 @@ private:
     uint64_t m_sendTimeout;
     libcocao::IOManager* m_iomanager;
 };
+
+class FdManager {
+public:
+    typedef RWMutex RWMutexType;
+    FdManager();
+
+    FdCtx::ptr get(int fd, bool auto_create = false);
+    void del(int fd);
+
+private:
+    RWMutexType m_mutex;
+    std::vector<FdCtx::ptr> m_datas;
+};
+
+typedef Singleton<FdManager> FdMgr;
 
 }
 

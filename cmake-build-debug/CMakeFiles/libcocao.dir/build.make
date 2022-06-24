@@ -108,9 +108,33 @@ CMakeFiles/libcocao.dir/libcocao/fiber.cc.o.provides: CMakeFiles/libcocao.dir/li
 CMakeFiles/libcocao.dir/libcocao/fiber.cc.o.provides.build: CMakeFiles/libcocao.dir/libcocao/fiber.cc.o
 
 
+CMakeFiles/libcocao.dir/libcocao/hook.cc.o: CMakeFiles/libcocao.dir/flags.make
+CMakeFiles/libcocao.dir/libcocao/hook.cc.o: ../libcocao/hook.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/libcocao.dir/libcocao/hook.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"libcocao/hook.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libcocao.dir/libcocao/hook.cc.o -c /home/libcocao/workspace/libcocao/libcocao/hook.cc
+
+CMakeFiles/libcocao.dir/libcocao/hook.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libcocao.dir/libcocao/hook.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"libcocao/hook.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/libcocao/workspace/libcocao/libcocao/hook.cc > CMakeFiles/libcocao.dir/libcocao/hook.cc.i
+
+CMakeFiles/libcocao.dir/libcocao/hook.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libcocao.dir/libcocao/hook.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"libcocao/hook.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/libcocao/workspace/libcocao/libcocao/hook.cc -o CMakeFiles/libcocao.dir/libcocao/hook.cc.s
+
+CMakeFiles/libcocao.dir/libcocao/hook.cc.o.requires:
+
+.PHONY : CMakeFiles/libcocao.dir/libcocao/hook.cc.o.requires
+
+CMakeFiles/libcocao.dir/libcocao/hook.cc.o.provides: CMakeFiles/libcocao.dir/libcocao/hook.cc.o.requires
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/hook.cc.o.provides.build
+.PHONY : CMakeFiles/libcocao.dir/libcocao/hook.cc.o.provides
+
+CMakeFiles/libcocao.dir/libcocao/hook.cc.o.provides.build: CMakeFiles/libcocao.dir/libcocao/hook.cc.o
+
+
 CMakeFiles/libcocao.dir/libcocao/log.cc.o: CMakeFiles/libcocao.dir/flags.make
 CMakeFiles/libcocao.dir/libcocao/log.cc.o: ../libcocao/log.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/libcocao.dir/libcocao/log.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/libcocao.dir/libcocao/log.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"libcocao/log.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libcocao.dir/libcocao/log.cc.o -c /home/libcocao/workspace/libcocao/libcocao/log.cc
 
 CMakeFiles/libcocao.dir/libcocao/log.cc.i: cmake_force
@@ -134,7 +158,7 @@ CMakeFiles/libcocao.dir/libcocao/log.cc.o.provides.build: CMakeFiles/libcocao.di
 
 CMakeFiles/libcocao.dir/libcocao/iomanager.cc.o: CMakeFiles/libcocao.dir/flags.make
 CMakeFiles/libcocao.dir/libcocao/iomanager.cc.o: ../libcocao/iomanager.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/libcocao.dir/libcocao/iomanager.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/libcocao.dir/libcocao/iomanager.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"libcocao/iomanager.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libcocao.dir/libcocao/iomanager.cc.o -c /home/libcocao/workspace/libcocao/libcocao/iomanager.cc
 
 CMakeFiles/libcocao.dir/libcocao/iomanager.cc.i: cmake_force
@@ -158,7 +182,7 @@ CMakeFiles/libcocao.dir/libcocao/iomanager.cc.o.provides.build: CMakeFiles/libco
 
 CMakeFiles/libcocao.dir/libcocao/schedule.cc.o: CMakeFiles/libcocao.dir/flags.make
 CMakeFiles/libcocao.dir/libcocao/schedule.cc.o: ../libcocao/schedule.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/libcocao.dir/libcocao/schedule.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/libcocao.dir/libcocao/schedule.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"libcocao/schedule.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libcocao.dir/libcocao/schedule.cc.o -c /home/libcocao/workspace/libcocao/libcocao/schedule.cc
 
 CMakeFiles/libcocao.dir/libcocao/schedule.cc.i: cmake_force
@@ -182,7 +206,7 @@ CMakeFiles/libcocao.dir/libcocao/schedule.cc.o.provides.build: CMakeFiles/libcoc
 
 CMakeFiles/libcocao.dir/libcocao/thread.cc.o: CMakeFiles/libcocao.dir/flags.make
 CMakeFiles/libcocao.dir/libcocao/thread.cc.o: ../libcocao/thread.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/libcocao.dir/libcocao/thread.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/libcocao.dir/libcocao/thread.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"libcocao/thread.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libcocao.dir/libcocao/thread.cc.o -c /home/libcocao/workspace/libcocao/libcocao/thread.cc
 
 CMakeFiles/libcocao.dir/libcocao/thread.cc.i: cmake_force
@@ -206,7 +230,7 @@ CMakeFiles/libcocao.dir/libcocao/thread.cc.o.provides.build: CMakeFiles/libcocao
 
 CMakeFiles/libcocao.dir/libcocao/timer.cc.o: CMakeFiles/libcocao.dir/flags.make
 CMakeFiles/libcocao.dir/libcocao/timer.cc.o: ../libcocao/timer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/libcocao.dir/libcocao/timer.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/libcocao.dir/libcocao/timer.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"libcocao/timer.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libcocao.dir/libcocao/timer.cc.o -c /home/libcocao/workspace/libcocao/libcocao/timer.cc
 
 CMakeFiles/libcocao.dir/libcocao/timer.cc.i: cmake_force
@@ -230,7 +254,7 @@ CMakeFiles/libcocao.dir/libcocao/timer.cc.o.provides.build: CMakeFiles/libcocao.
 
 CMakeFiles/libcocao.dir/libcocao/utils.cc.o: CMakeFiles/libcocao.dir/flags.make
 CMakeFiles/libcocao.dir/libcocao/utils.cc.o: ../libcocao/utils.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/libcocao.dir/libcocao/utils.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/libcocao.dir/libcocao/utils.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"libcocao/utils.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libcocao.dir/libcocao/utils.cc.o -c /home/libcocao/workspace/libcocao/libcocao/utils.cc
 
 CMakeFiles/libcocao.dir/libcocao/utils.cc.i: cmake_force
@@ -256,6 +280,7 @@ CMakeFiles/libcocao.dir/libcocao/utils.cc.o.provides.build: CMakeFiles/libcocao.
 libcocao_OBJECTS = \
 "CMakeFiles/libcocao.dir/libcocao/fd_manager.cc.o" \
 "CMakeFiles/libcocao.dir/libcocao/fiber.cc.o" \
+"CMakeFiles/libcocao.dir/libcocao/hook.cc.o" \
 "CMakeFiles/libcocao.dir/libcocao/log.cc.o" \
 "CMakeFiles/libcocao.dir/libcocao/iomanager.cc.o" \
 "CMakeFiles/libcocao.dir/libcocao/schedule.cc.o" \
@@ -268,6 +293,7 @@ libcocao_EXTERNAL_OBJECTS =
 
 ../bin/liblibcocao.so: CMakeFiles/libcocao.dir/libcocao/fd_manager.cc.o
 ../bin/liblibcocao.so: CMakeFiles/libcocao.dir/libcocao/fiber.cc.o
+../bin/liblibcocao.so: CMakeFiles/libcocao.dir/libcocao/hook.cc.o
 ../bin/liblibcocao.so: CMakeFiles/libcocao.dir/libcocao/log.cc.o
 ../bin/liblibcocao.so: CMakeFiles/libcocao.dir/libcocao/iomanager.cc.o
 ../bin/liblibcocao.so: CMakeFiles/libcocao.dir/libcocao/schedule.cc.o
@@ -276,7 +302,7 @@ libcocao_EXTERNAL_OBJECTS =
 ../bin/liblibcocao.so: CMakeFiles/libcocao.dir/libcocao/utils.cc.o
 ../bin/liblibcocao.so: CMakeFiles/libcocao.dir/build.make
 ../bin/liblibcocao.so: CMakeFiles/libcocao.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared library ../bin/liblibcocao.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library ../bin/liblibcocao.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libcocao.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -286,6 +312,7 @@ CMakeFiles/libcocao.dir/build: ../bin/liblibcocao.so
 
 CMakeFiles/libcocao.dir/requires: CMakeFiles/libcocao.dir/libcocao/fd_manager.cc.o.requires
 CMakeFiles/libcocao.dir/requires: CMakeFiles/libcocao.dir/libcocao/fiber.cc.o.requires
+CMakeFiles/libcocao.dir/requires: CMakeFiles/libcocao.dir/libcocao/hook.cc.o.requires
 CMakeFiles/libcocao.dir/requires: CMakeFiles/libcocao.dir/libcocao/log.cc.o.requires
 CMakeFiles/libcocao.dir/requires: CMakeFiles/libcocao.dir/libcocao/iomanager.cc.o.requires
 CMakeFiles/libcocao.dir/requires: CMakeFiles/libcocao.dir/libcocao/schedule.cc.o.requires

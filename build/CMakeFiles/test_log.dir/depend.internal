@@ -3,4 +3,6 @@
 
 CMakeFiles/test_log.dir/tests/test_log.cc.o
  /home/libcocao/workspace/libcocao/libcocao/log.h
+ /home/libcocao/workspace/libcocao/libcocao/singleton.h
+ /home/libcocao/workspace/libcocao/libcocao/utils.h
  /home/libcocao/workspace/libcocao/tests/test_log.cc

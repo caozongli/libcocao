@@ -1,6 +1,6 @@
-#include <sys/stat.h>
-#include "hook.h"
 #include "fd_manager.h"
+#include "hook.h"
+#include <sys/stat.h>
 
 namespace libcocao {
 
@@ -59,6 +59,41 @@ void FdCtx::setTimeoout(int type, uint64_t v) {
 uint64_t FdCtx::getTimeout(int type) {
     if (type == SO_RCVTIMEO) return m_recvTimeout;
     return m_sendTimeout;
+}
+
+FdManager::FdManager() {
+    m_datas.resize(64);
+}
+
+FdCtx::ptr FdManager::get(int fd, bool auto_create) {
+
+    if (fd == -1) {
+        return nullptr;
+    }
+
+    RWMutexType::ReadLock  lock(m_mutex);
+    if ((int)m_datas.size() <= fd) {
+        if (auto_create == false) return nullptr;
+    } else {
+        if (m_datas[fd] || !auto_create) {
+            return m_datas[fd];
+        }
+    }
+    lock.unlock();
+
+    RWMutexType::WriteLock lock2(m_mutex);
+    FdCtx::ptr ctx(new FdCtx(fd));
+    if (fd >= (int)m_datas.size()) {
+        m_datas.resize(fd * 1.5);
+    }
+    m_datas[fd] = ctx;
+    return ctx;
+}
+
+void FdManager::del(int fd) {
+    RWMutexType::WriteLock lock(m_mutex);
+    if ((int)m_datas.size() <= fd) return;
+    m_datas[fd].reset();
 }
 
 }

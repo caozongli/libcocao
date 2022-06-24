@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/libcocao.dir/libcocao/fd_manager.cc.o"
   "CMakeFiles/libcocao.dir/libcocao/fiber.cc.o"
+  "CMakeFiles/libcocao.dir/libcocao/hook.cc.o"
   "CMakeFiles/libcocao.dir/libcocao/log.cc.o"
   "CMakeFiles/libcocao.dir/libcocao/iomanager.cc.o"
   "CMakeFiles/libcocao.dir/libcocao/schedule.cc.o"

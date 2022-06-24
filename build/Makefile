@@ -114,6 +114,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_hook
+
+# Build rule for target.
+test_hook: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_hook
+.PHONY : test_hook
+
+# fast build rule for target.
+test_hook/fast:
+	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/build
+.PHONY : test_hook/fast
+
+#=============================================================================
 # Target rules for targets named test_fiber
 
 # Build rule for target.
@@ -152,6 +165,33 @@ test_log/fast:
 	$(MAKE) -f CMakeFiles/test_log.dir/build.make CMakeFiles/test_log.dir/build
 .PHONY : test_log/fast
 
+libcocao/fd_manager.o: libcocao/fd_manager.cc.o
+
+.PHONY : libcocao/fd_manager.o
+
+# target to build an object file
+libcocao/fd_manager.cc.o:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/fd_manager.cc.o
+.PHONY : libcocao/fd_manager.cc.o
+
+libcocao/fd_manager.i: libcocao/fd_manager.cc.i
+
+.PHONY : libcocao/fd_manager.i
+
+# target to preprocess a source file
+libcocao/fd_manager.cc.i:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/fd_manager.cc.i
+.PHONY : libcocao/fd_manager.cc.i
+
+libcocao/fd_manager.s: libcocao/fd_manager.cc.s
+
+.PHONY : libcocao/fd_manager.s
+
+# target to generate assembly for a file
+libcocao/fd_manager.cc.s:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/fd_manager.cc.s
+.PHONY : libcocao/fd_manager.cc.s
+
 libcocao/fiber.o: libcocao/fiber.cc.o
 
 .PHONY : libcocao/fiber.o
@@ -178,6 +218,60 @@ libcocao/fiber.s: libcocao/fiber.cc.s
 libcocao/fiber.cc.s:
 	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/fiber.cc.s
 .PHONY : libcocao/fiber.cc.s
+
+libcocao/hook.o: libcocao/hook.cc.o
+
+.PHONY : libcocao/hook.o
+
+# target to build an object file
+libcocao/hook.cc.o:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/hook.cc.o
+.PHONY : libcocao/hook.cc.o
+
+libcocao/hook.i: libcocao/hook.cc.i
+
+.PHONY : libcocao/hook.i
+
+# target to preprocess a source file
+libcocao/hook.cc.i:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/hook.cc.i
+.PHONY : libcocao/hook.cc.i
+
+libcocao/hook.s: libcocao/hook.cc.s
+
+.PHONY : libcocao/hook.s
+
+# target to generate assembly for a file
+libcocao/hook.cc.s:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/hook.cc.s
+.PHONY : libcocao/hook.cc.s
+
+libcocao/iomanager.o: libcocao/iomanager.cc.o
+
+.PHONY : libcocao/iomanager.o
+
+# target to build an object file
+libcocao/iomanager.cc.o:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/iomanager.cc.o
+.PHONY : libcocao/iomanager.cc.o
+
+libcocao/iomanager.i: libcocao/iomanager.cc.i
+
+.PHONY : libcocao/iomanager.i
+
+# target to preprocess a source file
+libcocao/iomanager.cc.i:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/iomanager.cc.i
+.PHONY : libcocao/iomanager.cc.i
+
+libcocao/iomanager.s: libcocao/iomanager.cc.s
+
+.PHONY : libcocao/iomanager.s
+
+# target to generate assembly for a file
+libcocao/iomanager.cc.s:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/iomanager.cc.s
+.PHONY : libcocao/iomanager.cc.s
 
 libcocao/log.o: libcocao/log.cc.o
 
@@ -260,6 +354,33 @@ libcocao/thread.cc.s:
 	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/thread.cc.s
 .PHONY : libcocao/thread.cc.s
 
+libcocao/timer.o: libcocao/timer.cc.o
+
+.PHONY : libcocao/timer.o
+
+# target to build an object file
+libcocao/timer.cc.o:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/timer.cc.o
+.PHONY : libcocao/timer.cc.o
+
+libcocao/timer.i: libcocao/timer.cc.i
+
+.PHONY : libcocao/timer.i
+
+# target to preprocess a source file
+libcocao/timer.cc.i:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/timer.cc.i
+.PHONY : libcocao/timer.cc.i
+
+libcocao/timer.s: libcocao/timer.cc.s
+
+.PHONY : libcocao/timer.s
+
+# target to generate assembly for a file
+libcocao/timer.cc.s:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/timer.cc.s
+.PHONY : libcocao/timer.cc.s
+
 libcocao/utils.o: libcocao/utils.cc.o
 
 .PHONY : libcocao/utils.o
@@ -314,6 +435,33 @@ tests/test_fiber.cc.s:
 	$(MAKE) -f CMakeFiles/test_fiber.dir/build.make CMakeFiles/test_fiber.dir/tests/test_fiber.cc.s
 .PHONY : tests/test_fiber.cc.s
 
+tests/test_hook.o: tests/test_hook.cc.o
+
+.PHONY : tests/test_hook.o
+
+# target to build an object file
+tests/test_hook.cc.o:
+	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/tests/test_hook.cc.o
+.PHONY : tests/test_hook.cc.o
+
+tests/test_hook.i: tests/test_hook.cc.i
+
+.PHONY : tests/test_hook.i
+
+# target to preprocess a source file
+tests/test_hook.cc.i:
+	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/tests/test_hook.cc.i
+.PHONY : tests/test_hook.cc.i
+
+tests/test_hook.s: tests/test_hook.cc.s
+
+.PHONY : tests/test_hook.s
+
+# target to generate assembly for a file
+tests/test_hook.cc.s:
+	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/tests/test_hook.cc.s
+.PHONY : tests/test_hook.cc.s
+
 tests/test_log.o: tests/test_log.cc.o
 
 .PHONY : tests/test_log.o
@@ -348,13 +496,23 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... test_hook"
 	@echo "... test_fiber"
 	@echo "... libcocao"
 	@echo "... edit_cache"
 	@echo "... test_log"
+	@echo "... libcocao/fd_manager.o"
+	@echo "... libcocao/fd_manager.i"
+	@echo "... libcocao/fd_manager.s"
 	@echo "... libcocao/fiber.o"
 	@echo "... libcocao/fiber.i"
 	@echo "... libcocao/fiber.s"
+	@echo "... libcocao/hook.o"
+	@echo "... libcocao/hook.i"
+	@echo "... libcocao/hook.s"
+	@echo "... libcocao/iomanager.o"
+	@echo "... libcocao/iomanager.i"
+	@echo "... libcocao/iomanager.s"
 	@echo "... libcocao/log.o"
 	@echo "... libcocao/log.i"
 	@echo "... libcocao/log.s"
@@ -364,12 +522,18 @@ help:
 	@echo "... libcocao/thread.o"
 	@echo "... libcocao/thread.i"
 	@echo "... libcocao/thread.s"
+	@echo "... libcocao/timer.o"
+	@echo "... libcocao/timer.i"
+	@echo "... libcocao/timer.s"
 	@echo "... libcocao/utils.o"
 	@echo "... libcocao/utils.i"
 	@echo "... libcocao/utils.s"
 	@echo "... tests/test_fiber.o"
 	@echo "... tests/test_fiber.i"
 	@echo "... tests/test_fiber.s"
+	@echo "... tests/test_hook.o"
+	@echo "... tests/test_hook.i"
+	@echo "... tests/test_hook.s"
 	@echo "... tests/test_log.o"
 	@echo "... tests/test_log.i"
 	@echo "... tests/test_log.s"
