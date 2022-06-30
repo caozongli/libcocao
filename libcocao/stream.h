@@ -103,7 +103,7 @@ public:
      */
     virtual int writeFixSize (ByteArray::ptr ba, size_t length);
 
-    virtual int close() = 0;
+    virtual void close() = 0;
 };
 
 }

@@ -332,7 +332,7 @@ public:
      * @param os
      * @return
      */
-    virtual std::ostream &dunmp (std::ostream &os) const ;
+    virtual std::ostream &dump (std::ostream &os) const ;
 
     virtual std::string toString () const;
 
@@ -399,7 +399,7 @@ protected:
     Address::ptr m_localAddress;
     /// 远端地址
     Address::ptr m_remoteAddress;
-
-
 };
+
+std::ostream &operator<< (std::ostream &os, const Socket &sock);
 }
