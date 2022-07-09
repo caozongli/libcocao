@@ -165,6 +165,33 @@ test_log/fast:
 	$(MAKE) -f CMakeFiles/test_log.dir/build.make CMakeFiles/test_log.dir/build
 .PHONY : test_log/fast
 
+libcocao/address.o: libcocao/address.cc.o
+
+.PHONY : libcocao/address.o
+
+# target to build an object file
+libcocao/address.cc.o:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/address.cc.o
+.PHONY : libcocao/address.cc.o
+
+libcocao/address.i: libcocao/address.cc.i
+
+.PHONY : libcocao/address.i
+
+# target to preprocess a source file
+libcocao/address.cc.i:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/address.cc.i
+.PHONY : libcocao/address.cc.i
+
+libcocao/address.s: libcocao/address.cc.s
+
+.PHONY : libcocao/address.s
+
+# target to generate assembly for a file
+libcocao/address.cc.s:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/address.cc.s
+.PHONY : libcocao/address.cc.s
+
 libcocao/fd_manager.o: libcocao/fd_manager.cc.o
 
 .PHONY : libcocao/fd_manager.o
@@ -245,6 +272,168 @@ libcocao/hook.s: libcocao/hook.cc.s
 libcocao/hook.cc.s:
 	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/hook.cc.s
 .PHONY : libcocao/hook.cc.s
+
+libcocao/http/http-parser/http_parser.o: libcocao/http/http-parser/http_parser.c.o
+
+.PHONY : libcocao/http/http-parser/http_parser.o
+
+# target to build an object file
+libcocao/http/http-parser/http_parser.c.o:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/http-parser/http_parser.c.o
+.PHONY : libcocao/http/http-parser/http_parser.c.o
+
+libcocao/http/http-parser/http_parser.i: libcocao/http/http-parser/http_parser.c.i
+
+.PHONY : libcocao/http/http-parser/http_parser.i
+
+# target to preprocess a source file
+libcocao/http/http-parser/http_parser.c.i:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/http-parser/http_parser.c.i
+.PHONY : libcocao/http/http-parser/http_parser.c.i
+
+libcocao/http/http-parser/http_parser.s: libcocao/http/http-parser/http_parser.c.s
+
+.PHONY : libcocao/http/http-parser/http_parser.s
+
+# target to generate assembly for a file
+libcocao/http/http-parser/http_parser.c.s:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/http-parser/http_parser.c.s
+.PHONY : libcocao/http/http-parser/http_parser.c.s
+
+libcocao/http/http.o: libcocao/http/http.cc.o
+
+.PHONY : libcocao/http/http.o
+
+# target to build an object file
+libcocao/http/http.cc.o:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/http.cc.o
+.PHONY : libcocao/http/http.cc.o
+
+libcocao/http/http.i: libcocao/http/http.cc.i
+
+.PHONY : libcocao/http/http.i
+
+# target to preprocess a source file
+libcocao/http/http.cc.i:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/http.cc.i
+.PHONY : libcocao/http/http.cc.i
+
+libcocao/http/http.s: libcocao/http/http.cc.s
+
+.PHONY : libcocao/http/http.s
+
+# target to generate assembly for a file
+libcocao/http/http.cc.s:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/http.cc.s
+.PHONY : libcocao/http/http.cc.s
+
+libcocao/http/http_parser.o: libcocao/http/http_parser.cc.o
+
+.PHONY : libcocao/http/http_parser.o
+
+# target to build an object file
+libcocao/http/http_parser.cc.o:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/http_parser.cc.o
+.PHONY : libcocao/http/http_parser.cc.o
+
+libcocao/http/http_parser.i: libcocao/http/http_parser.cc.i
+
+.PHONY : libcocao/http/http_parser.i
+
+# target to preprocess a source file
+libcocao/http/http_parser.cc.i:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/http_parser.cc.i
+.PHONY : libcocao/http/http_parser.cc.i
+
+libcocao/http/http_parser.s: libcocao/http/http_parser.cc.s
+
+.PHONY : libcocao/http/http_parser.s
+
+# target to generate assembly for a file
+libcocao/http/http_parser.cc.s:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/http_parser.cc.s
+.PHONY : libcocao/http/http_parser.cc.s
+
+libcocao/http/http_server.o: libcocao/http/http_server.cc.o
+
+.PHONY : libcocao/http/http_server.o
+
+# target to build an object file
+libcocao/http/http_server.cc.o:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/http_server.cc.o
+.PHONY : libcocao/http/http_server.cc.o
+
+libcocao/http/http_server.i: libcocao/http/http_server.cc.i
+
+.PHONY : libcocao/http/http_server.i
+
+# target to preprocess a source file
+libcocao/http/http_server.cc.i:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/http_server.cc.i
+.PHONY : libcocao/http/http_server.cc.i
+
+libcocao/http/http_server.s: libcocao/http/http_server.cc.s
+
+.PHONY : libcocao/http/http_server.s
+
+# target to generate assembly for a file
+libcocao/http/http_server.cc.s:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/http_server.cc.s
+.PHONY : libcocao/http/http_server.cc.s
+
+libcocao/http/http_session.o: libcocao/http/http_session.cc.o
+
+.PHONY : libcocao/http/http_session.o
+
+# target to build an object file
+libcocao/http/http_session.cc.o:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/http_session.cc.o
+.PHONY : libcocao/http/http_session.cc.o
+
+libcocao/http/http_session.i: libcocao/http/http_session.cc.i
+
+.PHONY : libcocao/http/http_session.i
+
+# target to preprocess a source file
+libcocao/http/http_session.cc.i:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/http_session.cc.i
+.PHONY : libcocao/http/http_session.cc.i
+
+libcocao/http/http_session.s: libcocao/http/http_session.cc.s
+
+.PHONY : libcocao/http/http_session.s
+
+# target to generate assembly for a file
+libcocao/http/http_session.cc.s:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/http_session.cc.s
+.PHONY : libcocao/http/http_session.cc.s
+
+libcocao/http/servlet.o: libcocao/http/servlet.cc.o
+
+.PHONY : libcocao/http/servlet.o
+
+# target to build an object file
+libcocao/http/servlet.cc.o:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/servlet.cc.o
+.PHONY : libcocao/http/servlet.cc.o
+
+libcocao/http/servlet.i: libcocao/http/servlet.cc.i
+
+.PHONY : libcocao/http/servlet.i
+
+# target to preprocess a source file
+libcocao/http/servlet.cc.i:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/servlet.cc.i
+.PHONY : libcocao/http/servlet.cc.i
+
+libcocao/http/servlet.s: libcocao/http/servlet.cc.s
+
+.PHONY : libcocao/http/servlet.s
+
+# target to generate assembly for a file
+libcocao/http/servlet.cc.s:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/http/servlet.cc.s
+.PHONY : libcocao/http/servlet.cc.s
 
 libcocao/iomanager.o: libcocao/iomanager.cc.o
 
@@ -501,6 +690,9 @@ help:
 	@echo "... libcocao"
 	@echo "... edit_cache"
 	@echo "... test_log"
+	@echo "... libcocao/address.o"
+	@echo "... libcocao/address.i"
+	@echo "... libcocao/address.s"
 	@echo "... libcocao/fd_manager.o"
 	@echo "... libcocao/fd_manager.i"
 	@echo "... libcocao/fd_manager.s"
@@ -510,6 +702,24 @@ help:
 	@echo "... libcocao/hook.o"
 	@echo "... libcocao/hook.i"
 	@echo "... libcocao/hook.s"
+	@echo "... libcocao/http/http-parser/http_parser.o"
+	@echo "... libcocao/http/http-parser/http_parser.i"
+	@echo "... libcocao/http/http-parser/http_parser.s"
+	@echo "... libcocao/http/http.o"
+	@echo "... libcocao/http/http.i"
+	@echo "... libcocao/http/http.s"
+	@echo "... libcocao/http/http_parser.o"
+	@echo "... libcocao/http/http_parser.i"
+	@echo "... libcocao/http/http_parser.s"
+	@echo "... libcocao/http/http_server.o"
+	@echo "... libcocao/http/http_server.i"
+	@echo "... libcocao/http/http_server.s"
+	@echo "... libcocao/http/http_session.o"
+	@echo "... libcocao/http/http_session.i"
+	@echo "... libcocao/http/http_session.s"
+	@echo "... libcocao/http/servlet.o"
+	@echo "... libcocao/http/servlet.i"
+	@echo "... libcocao/http/servlet.s"
 	@echo "... libcocao/iomanager.o"
 	@echo "... libcocao/iomanager.i"
 	@echo "... libcocao/iomanager.s"

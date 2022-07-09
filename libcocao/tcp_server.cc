@@ -116,7 +116,7 @@ void TcpServer::stop(){
  * @param prefix
  * @return
  */
-std::string TcpServer::toString (const std::string &prefix = ""){
+std::string TcpServer::toString (const std::string &prefix){
     std::stringstream ss;
     ss << prefix << "[type=" << m_type
         << " name=" << m_name

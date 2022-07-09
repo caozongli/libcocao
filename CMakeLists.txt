@@ -17,6 +17,12 @@ set (LIB_SRC
         libcocao/fd_manager.cc
         libcocao/fiber.cc
         libcocao/hook.cc
+        libcocao/http/http-parser/http_parser.c
+        libcocao/http/http.cc
+        libcocao/http/http_server.cc
+        libcocao/http/http_session.cc
+        libcocao/http/http_parser.cc
+        libcocao/http/servlet.cc
         libcocao/log.cc
         libcocao/iomanager.cc
         libcocao/noncopyable.h
