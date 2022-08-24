@@ -14,6 +14,7 @@
 #include <time.h>
 #include "singleton.h"
 #include "utils.h"
+#include <stdio.h>
 
 #define LIBCOCAO_LOG_LEVEL(logger, level) \
     if (logger->getLevel() <= level)     \
