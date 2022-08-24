@@ -16,6 +16,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/libcocao/workspace/libcocao/libcocao/address.cc" "/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/libcocao.dir/libcocao/address.cc.o"
+  "/home/libcocao/workspace/libcocao/libcocao/bytearray.cc" "/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/libcocao.dir/libcocao/bytearray.cc.o"
   "/home/libcocao/workspace/libcocao/libcocao/fd_manager.cc" "/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/libcocao.dir/libcocao/fd_manager.cc.o"
   "/home/libcocao/workspace/libcocao/libcocao/fiber.cc" "/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/libcocao.dir/libcocao/fiber.cc.o"
   "/home/libcocao/workspace/libcocao/libcocao/hook.cc" "/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/libcocao.dir/libcocao/hook.cc.o"
@@ -27,6 +28,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/libcocao/workspace/libcocao/libcocao/iomanager.cc" "/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/libcocao.dir/libcocao/iomanager.cc.o"
   "/home/libcocao/workspace/libcocao/libcocao/log.cc" "/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/libcocao.dir/libcocao/log.cc.o"
   "/home/libcocao/workspace/libcocao/libcocao/schedule.cc" "/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/libcocao.dir/libcocao/schedule.cc.o"
+  "/home/libcocao/workspace/libcocao/libcocao/socket.cc" "/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/libcocao.dir/libcocao/socket.cc.o"
   "/home/libcocao/workspace/libcocao/libcocao/thread.cc" "/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/libcocao.dir/libcocao/thread.cc.o"
   "/home/libcocao/workspace/libcocao/libcocao/timer.cc" "/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/libcocao.dir/libcocao/timer.cc.o"
   "/home/libcocao/workspace/libcocao/libcocao/utils.cc" "/home/libcocao/workspace/libcocao/cmake-build-debug/CMakeFiles/libcocao.dir/libcocao/utils.cc.o"

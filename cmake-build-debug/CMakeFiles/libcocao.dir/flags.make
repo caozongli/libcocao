@@ -17,6 +17,8 @@ CXX_INCLUDES = -I/home/libcocao/workspace/libcocao/. -I/usr/local/include
 
 # Custom defines: CMakeFiles/libcocao.dir/libcocao/address.cc.o_DEFINES = __FILE__="libcocao/address.cc"
 
+# Custom defines: CMakeFiles/libcocao.dir/libcocao/bytearray.cc.o_DEFINES = __FILE__="libcocao/bytearray.cc"
+
 # Custom defines: CMakeFiles/libcocao.dir/libcocao/fd_manager.cc.o_DEFINES = __FILE__="libcocao/fd_manager.cc"
 
 # Custom defines: CMakeFiles/libcocao.dir/libcocao/fiber.cc.o_DEFINES = __FILE__="libcocao/fiber.cc"
@@ -40,6 +42,8 @@ CXX_INCLUDES = -I/home/libcocao/workspace/libcocao/. -I/usr/local/include
 # Custom defines: CMakeFiles/libcocao.dir/libcocao/iomanager.cc.o_DEFINES = __FILE__="libcocao/iomanager.cc"
 
 # Custom defines: CMakeFiles/libcocao.dir/libcocao/schedule.cc.o_DEFINES = __FILE__="libcocao/schedule.cc"
+
+# Custom defines: CMakeFiles/libcocao.dir/libcocao/socket.cc.o_DEFINES = __FILE__="libcocao/socket.cc"
 
 # Custom defines: CMakeFiles/libcocao.dir/libcocao/thread.cc.o_DEFINES = __FILE__="libcocao/thread.cc"
 

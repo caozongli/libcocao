@@ -108,7 +108,6 @@ private:
     std::string m_pattern;
     bool m_error = false;
     std::vector<FormatItem::ptr> m_items;
-
 };
 
 

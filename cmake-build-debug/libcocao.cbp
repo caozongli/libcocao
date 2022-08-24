@@ -236,6 +236,12 @@
 		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/address.h">
 			<Option target="libcocao"/>
 		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/bytearray.cc">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/bytearray.h">
+			<Option target="libcocao"/>
+		</Unit>
 		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/fd_manager.cc">
 			<Option target="libcocao"/>
 		</Unit>
@@ -312,6 +318,12 @@
 			<Option target="libcocao"/>
 		</Unit>
 		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/singleton.h">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/socket.cc">
+			<Option target="libcocao"/>
+		</Unit>
+		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/socket.h">
 			<Option target="libcocao"/>
 		</Unit>
 		<Unit filename="/home/libcocao/workspace/libcocao/libcocao/thread.cc">

@@ -192,6 +192,33 @@ libcocao/address.cc.s:
 	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/address.cc.s
 .PHONY : libcocao/address.cc.s
 
+libcocao/bytearray.o: libcocao/bytearray.cc.o
+
+.PHONY : libcocao/bytearray.o
+
+# target to build an object file
+libcocao/bytearray.cc.o:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/bytearray.cc.o
+.PHONY : libcocao/bytearray.cc.o
+
+libcocao/bytearray.i: libcocao/bytearray.cc.i
+
+.PHONY : libcocao/bytearray.i
+
+# target to preprocess a source file
+libcocao/bytearray.cc.i:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/bytearray.cc.i
+.PHONY : libcocao/bytearray.cc.i
+
+libcocao/bytearray.s: libcocao/bytearray.cc.s
+
+.PHONY : libcocao/bytearray.s
+
+# target to generate assembly for a file
+libcocao/bytearray.cc.s:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/bytearray.cc.s
+.PHONY : libcocao/bytearray.cc.s
+
 libcocao/fd_manager.o: libcocao/fd_manager.cc.o
 
 .PHONY : libcocao/fd_manager.o
@@ -516,6 +543,33 @@ libcocao/schedule.cc.s:
 	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/schedule.cc.s
 .PHONY : libcocao/schedule.cc.s
 
+libcocao/socket.o: libcocao/socket.cc.o
+
+.PHONY : libcocao/socket.o
+
+# target to build an object file
+libcocao/socket.cc.o:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/socket.cc.o
+.PHONY : libcocao/socket.cc.o
+
+libcocao/socket.i: libcocao/socket.cc.i
+
+.PHONY : libcocao/socket.i
+
+# target to preprocess a source file
+libcocao/socket.cc.i:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/socket.cc.i
+.PHONY : libcocao/socket.cc.i
+
+libcocao/socket.s: libcocao/socket.cc.s
+
+.PHONY : libcocao/socket.s
+
+# target to generate assembly for a file
+libcocao/socket.cc.s:
+	$(MAKE) -f CMakeFiles/libcocao.dir/build.make CMakeFiles/libcocao.dir/libcocao/socket.cc.s
+.PHONY : libcocao/socket.cc.s
+
 libcocao/thread.o: libcocao/thread.cc.o
 
 .PHONY : libcocao/thread.o
@@ -693,6 +747,9 @@ help:
 	@echo "... libcocao/address.o"
 	@echo "... libcocao/address.i"
 	@echo "... libcocao/address.s"
+	@echo "... libcocao/bytearray.o"
+	@echo "... libcocao/bytearray.i"
+	@echo "... libcocao/bytearray.s"
 	@echo "... libcocao/fd_manager.o"
 	@echo "... libcocao/fd_manager.i"
 	@echo "... libcocao/fd_manager.s"
@@ -729,6 +786,9 @@ help:
 	@echo "... libcocao/schedule.o"
 	@echo "... libcocao/schedule.i"
 	@echo "... libcocao/schedule.s"
+	@echo "... libcocao/socket.o"
+	@echo "... libcocao/socket.i"
+	@echo "... libcocao/socket.s"
 	@echo "... libcocao/thread.o"
 	@echo "... libcocao/thread.i"
 	@echo "... libcocao/thread.s"

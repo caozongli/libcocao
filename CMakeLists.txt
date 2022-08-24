@@ -14,6 +14,7 @@ link_directories(/usr/local/lib)
 
 set (LIB_SRC
         libcocao/address.cc
+        libcocao/bytearray.cc
         libcocao/fd_manager.cc
         libcocao/fiber.cc
         libcocao/hook.cc
@@ -28,6 +29,7 @@ set (LIB_SRC
         libcocao/noncopyable.h
         libcocao/schedule.cc
         libcocao/singleton.h
+        libcocao/socket.cc
         libcocao/thread.cc
         libcocao/timer.cc
         libcocao/utils.cc
