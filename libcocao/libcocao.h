@@ -8,6 +8,7 @@
 #include "noncopyable.h"
 #include "schedule.h"
 #include "singleton.h"
+#include "tcp_server.h"
 #include "thread.h"
 #include "timer.h"
 #include "utils.h"

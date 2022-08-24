@@ -14,7 +14,6 @@ link_directories(/usr/local/lib)
 
 set (LIB_SRC
         libcocao/address.cc
-        libcocao/bytearray.cc
         libcocao/fd_manager.cc
         libcocao/fiber.cc
         libcocao/hook.cc
@@ -29,7 +28,6 @@ set (LIB_SRC
         libcocao/noncopyable.h
         libcocao/schedule.cc
         libcocao/singleton.h
-        libcocao/socket.cc
         libcocao/thread.cc
         libcocao/timer.cc
         libcocao/utils.cc
@@ -58,6 +56,12 @@ add_executable(test_hook tests/test_hook.cc)
 add_dependencies(test_hook libcocao)
 force_redefine_file_macro_for_sources(test_hook)
 target_link_libraries(test_hook ${LIBS})
+
+add_executable(test_tcpserver tests/test_tcp_server.cc)
+add_dependencies(test_tcpserver libcocao)
+force_redefine_file_macro_for_sources(test_tcpserver)
+target_link_libraries(test_tcpserver ${LIBS})
+
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
